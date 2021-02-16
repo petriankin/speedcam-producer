@@ -1,10 +1,10 @@
-package io.github.petriankin.speedcamproducer.service.impl;
+package io.github.petriankin.speedcam.service.impl;
 
 //import com.fasterxml.jackson.databind.ObjectMapper;
 
-import io.github.petriankin.speedcamproducer.dto.CameraDataDto;
-import io.github.petriankin.speedcamproducer.service.SpeedCameraDataProducerService;
-import io.github.petriankin.speedcamproducer.util.DataGenerator;
+import io.github.petriankin.speedcam.dto.CameraDataDto;
+import io.github.petriankin.speedcam.service.SpeedCameraDataProducerService;
+import io.github.petriankin.speedcam.util.DataGenerator;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;

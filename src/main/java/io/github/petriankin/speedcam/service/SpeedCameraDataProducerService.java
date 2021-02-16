@@ -1,4 +1,4 @@
-package io.github.petriankin.speedcamproducer.service;
+package io.github.petriankin.speedcam.service;
 
 public interface SpeedCameraDataProducerService {
     void produce();

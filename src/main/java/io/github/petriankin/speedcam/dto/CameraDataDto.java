@@ -1,4 +1,4 @@
-package io.github.petriankin.speedcamproducer.dto;
+package io.github.petriankin.speedcam.dto;
 
 import lombok.Builder;
 import lombok.Value;

@@ -1,7 +1,7 @@
-package io.github.petriankin.speedcamproducer.util;
+package io.github.petriankin.speedcam.util;
 
 
-import io.github.petriankin.speedcamproducer.dto.CameraDataDto;
+import io.github.petriankin.speedcam.dto.CameraDataDto;
 
 import java.time.Instant;
 import java.util.concurrent.ThreadLocalRandom;
