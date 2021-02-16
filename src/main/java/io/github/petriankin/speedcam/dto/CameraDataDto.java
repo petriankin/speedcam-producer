@@ -1,13 +1,15 @@
 package io.github.petriankin.speedcam.dto;
 
-import lombok.Builder;
-import lombok.Value;
+import lombok.*;
 
-@Value
+@Getter
 @Builder
+@NoArgsConstructor
+@AllArgsConstructor
 public class CameraDataDto {
-    Long cameraId;
-    Integer speed;
-    String licensePlate;
-    String dateTime;
+    private Long cameraId;
+    private Integer speed;
+    private String licensePlate;
+    private String dateTime;
+
 }
