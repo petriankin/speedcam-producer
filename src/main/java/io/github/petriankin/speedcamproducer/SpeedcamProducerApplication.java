@@ -1,4 +1,4 @@
-package io.github.petriankin.speedcam;
+package io.github.petriankin.speedcamproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
