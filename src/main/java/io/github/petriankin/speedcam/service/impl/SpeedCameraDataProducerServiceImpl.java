@@ -1,7 +1,5 @@
 package io.github.petriankin.speedcam.service.impl;
 
-//import com.fasterxml.jackson.databind.ObjectMapper;
-
 import io.github.petriankin.speedcam.dto.CameraDataDto;
 import io.github.petriankin.speedcam.service.SpeedCameraDataProducerService;
 import io.github.petriankin.speedcam.util.DataGenerator;
@@ -17,7 +15,7 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class SpeedCameraDataProducerServiceImpl implements SpeedCameraDataProducerService {
 
-    private final KafkaTemplate<Long, CameraDataDto> kafkaStarshipTemplate;
+    private final KafkaTemplate<Long, CameraDataDto> kafkaTemplate;
 
     @Value("${kafka.topic:test}")
     private String topicName;
@@ -27,6 +25,6 @@ public class SpeedCameraDataProducerServiceImpl implements SpeedCameraDataProduc
     public void produce() {
         CameraDataDto dto = DataGenerator.generateCameraData();
         log.info("sending {} to the topic {}", dto, topicName);
-        kafkaStarshipTemplate.send(topicName, dto);
+        kafkaTemplate.send(topicName, dto);
     }
 }

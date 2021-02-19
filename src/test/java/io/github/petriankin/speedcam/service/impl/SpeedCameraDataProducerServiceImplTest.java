@@ -38,7 +38,7 @@ class SpeedCameraDataProducerServiceImplTest {
         producer.produce();
         consumer.getLatch().await(10000, TimeUnit.MILLISECONDS);
 
-        assertThat(consumer.getLatch().getCount()).isEqualTo(0L);
+        assertThat(consumer.getLatch().getCount()).isZero();
         assertThat(consumer.getPayload())
                 .isNotNull()
                 .hasNoNullFieldsOrProperties();
